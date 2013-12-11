@@ -1492,7 +1492,8 @@ bool CBlock::DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex)
 
 bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 {
-    // Check it again in case a previous version let a bad block in
+    if (GetHash() == uint256("0x000000007fef108cb76d0cf941bc1d2c092ff62c73686cd29e16f89807ff780d"))
+        return error("CheckBlock() :197195 hash == 000000007fef108cb76d0cf941bc1d2c092ff62c73686cd29e16f89807ff780d");// Check it again in case a previous version let a bad block in
     if (!CheckBlock(!fJustCheck, !fJustCheck))
         return false;
 
