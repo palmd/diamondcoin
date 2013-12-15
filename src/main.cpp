@@ -1492,8 +1492,7 @@ bool CBlock::DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex)
 
 bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 {
-    if (GetHash() == uint256("0x000000007fef108cb76d0cf941bc1d2c092ff62c73686cd29e16f89807ff780d"))
-        return error("CheckBlock() :197195 hash == 000000007fef108cb76d0cf941bc1d2c092ff62c73686cd29e16f89807ff780d");// Check it again in case a previous version let a bad block in
+    // Check it again in case a previous version let a bad block in
     if (!CheckBlock(!fJustCheck, !fJustCheck))
         return false;
 
@@ -2753,7 +2752,8 @@ string GetWarnings(string strFor)
 
     // ppcoin: should not enter safe mode for longer invalid chain
     // ppcoin: if sync-checkpoint is too old do not enter safe mode
-    if (Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 100) && !fTestNet && !IsInitialBlockDownload())
+    // temp
+    if (Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 200) && !fTestNet && !IsInitialBlockDownload())
     {
         nPriority = 100;
         strStatusBar = "WARNING: Checkpoint is too old. Wait for block chain to download, or notify developers.";
