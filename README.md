@@ -1,4 +1,3 @@
-
 Diamond - a decendent of Novacoin/PPCoin with Pow/PoS. It combines the great features from Luckycoin (random blocks) and Florincoin (transaction message). It is the first PoW/PoS coin supporting random blocks.
 
 	- Each normal block has 1 diamond
@@ -16,4 +15,4 @@ Diamond - a decendent of Novacoin/PPCoin with Pow/PoS. It combines the great fea
 		- 1 super+ block with 30 diamonds
 	- The default ports are 17771(Connect) and 17772(RPC).
 
-The official website is: diamondcoin.net
+The official website is: dmdcoin.net
