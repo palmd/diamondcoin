@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
+    <width>614</width>
     <height>380</height>
    </rect>
   </property>
@@ -91,11 +91,13 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>
-Copyright © 2009-2012 Bitcoin Developers
-Copyright © 2012 PPCoin Developers
-Copyright © 2013 Diamond Developers
-</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Copyright © 2009-2012 Bitcoin Developer&lt;br/&gt;Copyright © 2012 PPCoin Developers&lt;br/&gt;Copyright © 2013 Novacoin Developers&lt;br/&gt;Copyright © 2013-2014 DiamondCoin Developers&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Dev Doantions:&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;dSkGgoCzjVzNhDndJHZJRbrF2f7MSmqmNb&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;a href=&quot;https://www.cryptsy.com/users/register?refid=8564&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://www.cryptsy.com/users/register?refid=8564&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#0000ff;&quot;&gt;Click Here to Trade DMD on Cryptsy!&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::RichText</enum>
+       </property>
+       <property name="openExternalLinks">
+        <bool>true</bool>
        </property>
        <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -108,8 +110,7 @@ Copyright © 2013 Diamond Developers
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>
-This is experimental software. If you don't treat it as such, you're likely to put an eye out!
+        <string>This is experimental software. If you don't treat it as such, you're likely to put an eye out!
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
